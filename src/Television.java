@@ -15,4 +15,8 @@ public interface Television {
 
     abstract String whatIsThisDevice();
 
+
+    default String boo2() {
+        return("boo2 says hello!");
+    }
 }

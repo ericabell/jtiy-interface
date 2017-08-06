@@ -38,6 +38,7 @@ public class Main {
         ImplementsExtendTelephone newExtendedTelephone = new ImplementsExtendTelephone();
         System.out.printf("What did the ExtendedTelephone say? %d\n" , newExtendedTelephone.boo());
 
+        System.out.printf("What did boo2 say? %s\n" , myDevice.boo2());
 
     }
 }
