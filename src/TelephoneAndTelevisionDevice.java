@@ -1,32 +1,37 @@
 public class TelephoneAndTelevisionDevice implements Telephone, Television {
 
-    @Override
-    public int turnOn() {
-        return 0;
-    }
+    int channelNumber;
+    String telephoneNumber;
 
     @Override
     public int pickupPhone() {
-        return 0;
+        return 1;
     }
 
     @Override
-    public int placeCall() {
-        return 0;
+    public String dialNumber(String number) {
+        this.telephoneNumber = number;
+        return this.telephoneNumber;
     }
 
     @Override
-    public int hangUp() {
-        return 0;
+    public double hangUp() {
+        return 0.0001;
     }
 
     @Override
-    public int changeToChannel() {
-        return 0;
+    public boolean turnOn() {
+        return true;
     }
 
     @Override
-    public int turnOff() {
-        return 0;
+    public int changeToChannel(int newChannel) {
+        this.channelNumber = newChannel;
+        return this.channelNumber;
+    }
+
+    @Override
+    public boolean turnOff() {
+        return false;
     }
 }

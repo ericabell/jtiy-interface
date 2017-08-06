@@ -1,7 +1,6 @@
 public interface Television {
-    int channel;
 
-    int turnOn();
-    int changeToChannel();
-    int turnOff();
+    boolean turnOn();
+    int changeToChannel(int newChannel);
+    boolean turnOff();
 }
