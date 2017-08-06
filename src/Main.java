@@ -32,5 +32,12 @@ public class Main {
         phoneHangUp = myDevice.hangUp();
         System.out.printf("Did I hang up the phone? %f\n" , phoneHangUp);
 
+        System.out.printf("What is this device? %s\n" , myDevice.whatIsThisDevice());
+
+
+        ImplementsExtendTelephone newExtendedTelephone = new ImplementsExtendTelephone();
+        System.out.printf("What did the ExtendedTelephone say? %d\n" , newExtendedTelephone.boo());
+
+
     }
 }

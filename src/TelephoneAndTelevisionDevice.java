@@ -34,4 +34,9 @@ public class TelephoneAndTelevisionDevice implements Telephone, Television {
     public boolean turnOff() {
         return false;
     }
+
+    @Override
+    public String whatIsThisDevice() {
+        return "Television and Telephone!";
+    }
 }
